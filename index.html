@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sarim's Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/new_logo.jpg" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <style>
+    article.resume {
+      color: white; 
+    }
+  
+    .resume h2,
+    .resume h3,
+    .resume h4 {
+      color: white; 
+    }
+  
+    .resume p,
+    .resume li {
+      color: rgba(255, 255, 255, 0.75); /* dim content */
+    }
+  
+    .resume a {
+      color: #99ccff; /* light blue for links */
+    }
+  </style>
+  
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+      (function(){
+        emailjs.init("qokvStN6OWT07wHxW"); 
+      })();
+    </script>
+
+
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/my_image.jpeg" alt="Muhammad Sarim" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Muhammad Sarim">Muhammad Sarim</h1>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:muhammadsarim444@gmail.com" class="contact-link">muhammadsarim444@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+(91) 7453844004" class="contact-link">(+91) 7453844004</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="1982-06-23">August 2, 2002</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Saharanpur, Uttar Pradesh, India</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://github.com/Saarim02" class="social-link" target="_blank" rel="noopener">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/muhammadsarim02/" class="social-link" target="_blank" rel="noopener">
+              <ion-icon name="logo-linkedin" style="color: #0077b5;"></ion-icon>
+            </a>
+          </li>                   
+          
+          <li class="social-item">
+            <a href="https://leetcode.com/sarim02" class="social-link" target="_blank" rel="noopener">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/LeetCode_logo_black.png" alt="LeetCode" style="height: 24px; width: 24px;">
+            </a>
+          </li>
+          
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            Hey there! I'm Muhammad Sarim — a passionate coder, and someone who 
+            believes great software begins with a bold idea (and a strong cup of coffee ☕).
+          </p>
+
+          <p>
+            I’m currently pursuing my B.Tech at IIIT Sonipat.
+            My tech toolbox includes C++, JavaScript, Python, React, Node.js, and MongoDB — 
+            but I’m always adding new tools to the shelf.
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What i'm doing</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Data Structures and Algorithms</h4>
+
+                <p class="service-item-text">
+                  Sharpening my problem-solving skills through Data Structures and Algorithms, one challenge at a time.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web development</h4>
+
+                <p class="service-item-text">
+                  High-quality development of sites at the professional level.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Machine Learning</h4>
+
+                <p class="service-item-text">
+                  Exploring the basics of Machine Learning and gradually building my foundation in this exciting field.
+                </p>
+              </div>
+
+            </li>
+
+            
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+          </section>
+
+        </div>
+
+
+
+        <section class="p">
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume" style="padding-top: 7em; color: white;">
+        <section class="resume-header">
+          <h2 style="text-align: center;">Muhammad Sarim</h2>
+          <br>
+        </section>
+        <hr>
+        <section>
+          <br>
+          <h2>Education</h2>
+          <br>
+          <h4>Indian Institute of Information Technology Sonepat</h4>
+          <p>
+            <i>B.Tech in Computer Science & Engineering</i> <br>
+            <strong>GPA:</strong> 8.4571 / 10.0 <br>
+            <strong>Relevant Coursework:</strong> Algorithms, Data Structures, Database Management System, 
+            Object Oriented Programming, Operating System, Computer Networks, Software Engineering, Compiler Design, Machine Learning <br>
+          </p>
+          <br>
+        </section>
+        <hr>
+        <section>
+          <br>
+          <h2>Position of Responsibility</h2>
+          <br>
+          <h3>Enigmatics (Coding Club @IIITSonepat)</h3>
+          <p><i>Enigmatics Club</i> | June 2023 – Present</p>
+          <ul>
+            <li>Led 10+ collaborative coding sessions within the Coding Club at IIIT Sonepat, 
+              driving the development of innovative software solutions and enhancing programming skills among members.</li>
+          </ul>
+          <br>
+        </section>
+        <hr>
+        <section>
+          <br>
+          <h2>Projects</h2>
+          <br>
+          <ul class="project-list">
+            <li>
+              <h3>BitTorrent Client – Peer-to-Peer File Sharing System</h3> &nbsp; | &nbsp; C++ &nbsp; &nbsp;
+              <a href="https://github.com/Saarim02/BitTorrent-Client-Peer-to-Peer-File-Sharing-System">Link</a>
+              <ul>
+                <li>Developed a BitTorrent client that enables secure peer-to-peer file sharing with data integrity checks, 
+                  featuring concurrent networking using raw TCP sockets for parallel downloads and achieving throughput 
+                  above 1 MB/s in multi-peer tests.</li>
+              </ul>
+            </li>
+            <li>
+              <h3>Chat App</h3> &nbsp; | &nbsp; JavaScript, Node.js, React.js, MongoDB, Socket.io &nbsp;&nbsp;
+              <a href="https://github.com/Saarim02/Chat-app-">Link</a>
+              <br>
+              <ul>
+                <li>Engineered a real-time chat application utilizing JavaScript, Node.js, 
+                  React.js, and Socket.io that facilitated both one-on-one and group communications 
+                  while ensuring persistent user sessions for enhanced engagement.</li>
+              </ul>
+            </li>
+            <li>
+              <h3>CPU Scheduling Algorithms</h3> &nbsp; | &nbsp; C++ &nbsp;&nbsp;
+              <a href="https://github.com/Saarim02/CPU-Scheduling-Algorithms">Link</a>
+              <br>
+              <ul>
+                <li>Implemented various CPU scheduling algorithms including First Come First Serve (FCFS), 
+                  Shortest Job First (SJF), Shortest Remaining Time First (SRTF), Round Robin, 
+                  Preemptive, and Non-Preemptive Priority Scheduling.</li>
+              </ul>
+            </li>
+          </ul>
+          
+          <br>
+        </section>
+        <hr>
+        <section>
+          <br>
+          <h2>Technical Skills</h2>
+          <br>
+          <ul>
+            <li><h4>Programming Languages:</h4> C, C++, JavaScript, Python, SQL</li>
+            <li><h4>Frameworks:</h4> Node.js, React.js, Express.js</li>
+            <li><h4>Databases:</h4> MySQL, MongoDB</li>
+            <li><h4>Tools:</h4> Git, vs Code</li>
+            <li><h4>Inter-Personal Skills:</h4> Problem Solving, Team Work</li>
+          </ul>
+          <br>
+        </section>
+        <hr>
+        <section>
+          <br>
+          <h2>Certification</h2>
+          <br>
+          <ul>
+            <li>
+              <h4>
+                <a href="https://drive.google.com/file/d/1PIohGRfJdcjNIhnHlXozqOm-Rp9eZF4r/view?usp=sharing" target="_blank">
+                  Supervised Machine Learning: Regression and Classification
+                </a>
+              </h4>
+            </li>
+          </ul>
+
+        </section>
+      </article>
+      
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <section class="projects">
+
+          
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value></div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+
+          </div>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form class="form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+          </form>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+  <script>
+    document.querySelector(".form").addEventListener("submit", function(e) {
+      e.preventDefault();
+  
+      emailjs.sendForm("service_l22kbhd", "template_poxxpu6", this)
+        .then(function(response) {
+           alert("Message sent successfully!");
+        }, function(error) {
+           alert("FAILED...", error);
+        });
+    });
+  </script>
+
+  
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <script>
+    const forms = document.querySelector("[data-form]");
+    const inputs = document.querySelectorAll("[data-form-input]");
+    const submitBtn = document.querySelector("[data-form-btn]");
+  
+    // Enable button when all inputs have content
+    inputs.forEach(input => {
+      input.addEventListener("input", () => {
+        const allFilled = Array.from(inputs).every(inp => inp.value.trim() !== "");
+        submitBtn.disabled = !allFilled;
+      });
+    });
+  
+    form.addEventListener("submit", (event) => {
+      event.preventDefault();
+  
+      const formData = new FormData(form);
+      const fullName = formData.get("fullname");
+      const email = formData.get("email");
+      const message = formData.get("message");
+  
+      console.log("Form Submitted:", fullName, email, message);
+  
+      alert("Message sent! (Not actually — JS captured it.)");
+    });
+  </script>
+  
+
+</body>
+
+</html>
